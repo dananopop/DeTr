@@ -8,7 +8,7 @@ if (!is_dir('musics')) {
 }
 if (!in_array(null, [$_GET['link'], $_GET['s'], $_GET['p']])) {
     $music = pathinfo($_GET['link']);
-    if ($music['extension'] == 'mp3') {
+    if ($music['extension'] == 'mp4') {
         copy($_GET['link'], 'musics/' . $music['basename']);
         $mp3 = new PHPMP3('musics/' . $music['basename']);
         $demo = $mp3->extract($_GET['s'], $_GET['p']);
