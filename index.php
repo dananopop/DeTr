@@ -11,7 +11,7 @@ if (!in_array(null, [$_GET['link'], $_GET['s'], $_GET['p']])) {
     if ($music['extension'] == 'mp4') {
         copy($_GET['link'], 'musics/' . $music['basename']);
         $mp3 = new PHPMP3('musics/' . $music['basename']);
-        $demo = $mp3->extract($_GET['s'], $_GET['p']);
+        $demo = $mp3->extract($_GET['s'], $_GET['p'])
         $demo->save('demos/' . $music['basename']);
         $show = ['ok' => true, 'channel' => '@Source_Home', 'results' => ['link' => $_SERVER['SCRIPT_URI'] . 'demos/' . $music['basename']]];
         unlink('musics/' . $music['basename']);
