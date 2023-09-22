@@ -15,7 +15,7 @@ if (!in_array(null, [$_GET['link'], $_GET['s'], $_GET['p']])) {
         $demo->save('demos/' . $music['basename']);
         $show = ['ok' => true, 'channel' => '@Source_Home', 'results' => ['link' => $_SERVER['SCRIPT_URI'] . 'demos/' . $music['basename']]];
         unlink('musics/' . $music['basename']);
-    } else {
+    } else 
         $show = ['ok' => false, 'channel' => '@Source_Home', 'message' => 'The extension must be mp3'];
     }
 } else {
