@@ -7,7 +7,6 @@ class PHPMP3
      * The full mp3 file
      *
      * @var string
-     */
     private $str;
 
     /**
