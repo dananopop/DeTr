@@ -9,7 +9,7 @@ class PHPMP3
      * @var string
     private $str;
 
-    /**
+
      * The time length of the current file
      *
      * @var
