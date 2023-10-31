@@ -22,6 +22,23 @@ class PHPMP3
      * @var
      */
     private $frames;
+$globalVar = 10;
+
+function modifyGlobalVar() {
+    global $globalVar;
+    $globalVar += 5;
+}
+
+modifyGlobalVar();
+// $globalVar is now 15
+function incrementByReference(&$value) {
+    $value++;
+}
+
+$number = 5;
+incrementByReference($number);
+// $number is now 6
+
 
     /**
      * Translate ascii characters to binary
