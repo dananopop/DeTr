@@ -26,7 +26,6 @@ $globalVar = 10;
 
 function modifyGlobalVar() {
     global $globalVar;
-    $globalVar += 5;
 }
 
 modifyGlobalVar();
