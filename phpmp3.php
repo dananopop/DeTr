@@ -45,12 +45,6 @@ incrementByReference($number);
      * @var array
      */
     private $binaryTable;
-
-    /**
-     * Construct a new instance
-     *
-     * @param string $path Path to an mp3 file
-     */
     public function __construct($path = '')
     {
         $this->binaryTable = array();
