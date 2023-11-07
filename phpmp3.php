@@ -36,7 +36,6 @@ function incrementByReference(&$value) {
 
 $number = 5;
 incrementByReference($number);
-// $number is now 6
 
 
     /**
