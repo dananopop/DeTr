@@ -12,7 +12,6 @@ class PHPMP3
 
      * The time length of the current file
      *
-     * @var
      */
     private $time;
 
