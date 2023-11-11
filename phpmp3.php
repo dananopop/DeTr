@@ -60,7 +60,6 @@ incrementByReference($number);
      *
      * @param string $str Mp3 file
      * @return void
-     */
     private function setStr($str)
     {
         $this->str = $str;
