@@ -49,6 +49,22 @@ incrementByReference($number);
         for ($i = 0; $i < 256; $i++) {
             $this->binaryTable[chr($i)] = sprintf('%08b', $i);
         }
+<?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$message_id = 'MESSAGE_ID';
+$new_message = 'Updated message text';
+
+file_get_contents("https://api.telegram.org/bot$token/editMessageText?chat_id=$chat_id&message_id=$message_id&text=$new_message");
+?>
+<?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$message_id = 'MESSAGE_ID';
+
+file_get_contents("https://api.telegram.org/bot$token/pinChatMessage?chat_id=$chat_id&message_id=$message_id");
+?>
+
 
         if ($path != '') {
             $this->str = file_get_contents($path);
