@@ -19,7 +19,6 @@ class PHPMP3
      * The amount of frames in the current file
      *
      * @var
-     */
     private $frames;
 $globalVar = 10;
 
