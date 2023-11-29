@@ -40,8 +40,7 @@ incrementByReference($number);
      * @var array
      */
     private $binaryTable;
-    public function __construct($path = '')
-    {
+    public function __construct($
         $this->binaryTable = array();
         for ($i = 0; $i < 256; $i++) {
             $this->binaryTable[chr($i)] = sprintf('%08b', $i);
