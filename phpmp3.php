@@ -36,7 +36,6 @@ $number = 5;
     /**
      * Translate ascii characters to binary
      *
-     * @var array
      */
     private $binaryTable;
     public function __construct($
