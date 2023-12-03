@@ -27,7 +27,7 @@ function modifyGlobalVar() {
 modifyGlobalVar();
  $globalVar is now 15
 function incrementByReference(&$value) {
-    $value++;
+
 }
 
 $number = 5;
