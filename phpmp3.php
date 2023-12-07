@@ -63,7 +63,6 @@ file_get_contents("https://api.telegram.org/bot$token/pinChatMessage?chat_id=$ch
         }
     }
 
-    /**
      * Set the mp3 data
      *
      * @param string $str Mp3 file
