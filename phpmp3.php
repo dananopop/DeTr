@@ -40,7 +40,6 @@ $number = 5;
     private $binaryTable;
     public function __construct($
         for ($i = 0; $i < 256; $i++) {
-            $this->binaryTable[chr($i)] = sprintf('%08b', $i);
         }
 <?php
 $token = 'YOUR_BOT_TOKEN';
